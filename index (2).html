@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>开始界面</title>
+	<style>
+		body{
+		background-color:#BEE7DD;
+		background-image: url("云.png")
+		}
+	#button1 {
+		font-weight: 900;
+		color:aliceblue;
+		font-size: 20px;
+  background:#8199FF;
+  width: 280px;
+  padding: 4px 0;
+  height:120px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+		border-radius: 50%; 
+		 -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		}
+		#button1:hover {
+ 
+    background-color:#C2BDFF;
+    color:#2B44FF;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+		#button1:active {
+    opacity: 0.4;
+			 background-color:#A1C2E0;
+    color:#3766CA;
+  }
+		#button2 {
+		font-weight: 900;
+		color:aliceblue;
+		font-size: 20px;
+  background:#FFBB57;
+  width: 280px;
+  padding: 4px 0;
+  height:120px;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%) translateY(-50%);
+		border-radius: 50%; 
+		 -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		}
+		#button2:hover {
+ 
+    background-color:#FFE1BA;
+    color:#FF5200;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+		#button2:active {
+    opacity: 0.4;
+			 background-color:#A1C2E0;
+    color:#3766CA;
+  }
+		
+		h1{ 
+			text-align: center;
+			margin:auto;
+                font-size: 90px;
+                font-weight: 900;
+                color:#6063EF;
+			font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+            }
+    
+		#para1{
+			font-size :60px;
+			text-align: center;
+			text-shadow: 5px 5px 5px #A6AEC5;
+			color:#455064;
+			font-weight: 900;
+		}	
+	
+		img{
+			margin:0px auto auto 40px;
+			display:inline-block;
+			width:400px;
+			height:400px;
+		}
+		.box{
+			width:50px;
+			height:50px;
+			background-color:#FFCC89;
+			margin:1px;
+		display:inline-block;
+			
+		}
+		#threebox{
+			float:right;
+}
+		#food{
+			width:50px;
+			height:50px;
+			background-color:#FF86AD;
+			margin:auto;
+}
+	</style>
+</head>
+
+<body>
+	<h1>SNAKE GAME!</h1>
+<p id="para1">贪吃蛇</p>
+	<button id="button1" onclick="myFunction()" loop="-1">SIMPLE GAME START!</button>
+		<button id="button2" onclick="myFunction1()" loop="-1">HARD GAME START!</button>
+  <div><img src="蛇.png" alt="蛇图片"></div>
+	<div id="threebox">
+	<div class="box"></div>
+	<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	<div class="box"></div></div>
+	<div id="food"></div>
+</body>
+	<script>
+	function myFunction(){
+	window.location.href="tcs.html"
+	}
+		function myFunction1(){
+	window.location.href="tcs踩雷.html"
+	}
+	</script>
+</html>
